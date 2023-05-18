@@ -5,8 +5,10 @@
 <!-- ![image](https://user-images.githubusercontent.com/23248726/220005380-ede4fb14-0b8d-4582-a063-3cc4beeccfb7.png) -->
 <!-- ![image](https://user-images.githubusercontent.com/8157590/239209122-7a75d00a-2ac5-4a5e-a193-4df4d1a8f65b.png) -->
 
-<img src="https://user-images.githubusercontent.com/8157590/239209122-7a75d00a-2ac5-4a5e-a193-4df4d1a8f65b.png"  width="60%" height="30%">
-
+<div display="flex">
+  <img src="https://user-images.githubusercontent.com/8157590/239209122-7a75d00a-2ac5-4a5e-a193-4df4d1a8f65b.png"  width="50%" height="30%">
+    <img src="https://user-images.githubusercontent.com/8157590/239209122-7a75d00a-2ac5-4a5e-a193-4df4d1a8f65b.png"  width="50%" height="30%">
+</div>
 
 
 
