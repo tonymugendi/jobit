@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react'
 import { Text, View, SafeAreaView, ScrollView, ActivityIndicator, RefreshControl } from 'react-native'
-import { Stack, useRouter, useSearchParams } from 'expo-router'
+import { Stack, useRouter, useLocalSearchParams } from 'expo-router'
 
 import { Company, JobAbout, JobFooter, JobTabs, ScreenHeaderBtn, Specifics } from '../../components'
 import { COLORS, icons, SIZES } from '../../constants'
@@ -11,18 +11,21 @@ const tabs = ['About', 'Qualifications', 'Responsibilities']
 
 
 const JobDetails = () => {
-  const params = useSearchParams();
+  const params = useLocalSearchParams();
   const router = useRouter();
   const [refreshing, setRefreshing] = useState(false)
   const [activeTab, setActiveTab] = useState(tabs[0])
-
 
   const { data, isLoading, error, refetch } = useFetcher("job-details", {
     job_id: params.id,
     extended_publisher_details: 'false'
   })
 
-  const onRefresh = () => { }
+  const onRefresh = useCallback(() => {
+    setRefreshing(true);
+    refetch()
+    setRefreshing(false)
+  })
 
   const displayTabContent = () => {
     switch (activeTab) {
