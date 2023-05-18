@@ -7,7 +7,7 @@
 
 <div display="flex" flexDirection="row">
   <img src="https://user-images.githubusercontent.com/8157590/239209122-7a75d00a-2ac5-4a5e-a193-4df4d1a8f65b.png"  width="50%" height="30%">
-    <img src="https://user-images.githubusercontent.com/8157590/239209122-7a75d00a-2ac5-4a5e-a193-4df4d1a8f65b.png"  width="50%" height="30%">
+    <img src="https://user-images.githubusercontent.com/8157590/239209165-dd993850-d9c5-4627-8500-6c8faf120073.png"  width="50%" height="30%">
 </div>
 
 
